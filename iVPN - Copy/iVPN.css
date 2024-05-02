@@ -1,0 +1,283 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color:black;
+    background-image: linear-gradient(to right, bisque, navajowhite);
+    transition: all 1s ease-in-out;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+.yo{
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    margin-top: 1px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: black;
+    padding-top: 1px;
+    border-radius: 20px;
+    position: sticky;
+    top: 2px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:  skyblue;
+    transition: all 1s ease-in-out;
+}
+
+li a:focus {
+    color: skyblue;
+    transition: all 1s ease-in-out;
+}
+
+li a:active{
+    color: skyblue;
+    transition: all 1s ease-in-out;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.left {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+   
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .img {
+  
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .vpn-pricing {
+    width: 550px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.vpn-pricing h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vpn-pricing p {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.plan:last-child {
+    margin-right: 0;
+}
+
+.plan p {
+    margin-bottom: 10px;
+}
+
+.plan .discount {
+    color: orangered;
+    font-weight: bold;
+}
+
+.plan .billed {
+    color: #777;
+    font-size: 12px;
+}
+
+.plan button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.plan button:hover{
+    background-color: #fffd;
+    color: orangered;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.activate-windows {
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+}
+
+.best-deal {
+    background-color: orangered;
+    color: #fff;
+    transition: all 1s ease-in-out;
+    border-radius: 10px; 
+}
+
+.best-deal .discount {
+    color: #fff;
+}
+
+.best-deal button {
+    background-color: #fff;
+    color: #4caf50;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+}
+
+.best-deal button:hover {
+  background-color: #4caf50 ;
+  color: #fff;
+  transition: all 1s ease-in-out;
+  border-radius: 10px; 
+}
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: left;
+    background-color: rgb(46, 46, 46);
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color : white;
+  }
+
+  .footer p{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+  }
+
+  .footer a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer a:visited{
+    text-decoration: none;
+  }
+
+  .footer a:hover{
+    filter: blur(2px);
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .left, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+   .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .vpn-pricing {
+    width: 100%;
+  }
+}
+
+   /* For the log in page*/
+   .content{
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+input{
+    border-radius: 10px;
+    border-color: lightblue;
+    height: 35px;
+    transition: all 1s ease-in-out;
+}
+
+/* for the login button */
+.submit{
+    background-color: orangered;
+    color: navajowhite;
+    width: 15%;
+    border-radius: 10px;
+    height: 35px;
+    transition: all 1s ease-in-out;
+}
